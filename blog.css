@@ -1,0 +1,114 @@
+/* Base Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url('Images/Pink Marble Background Reminder Instagram Post.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+  
+  .navbar {
+    display: flex;
+    gap: 2rem;
+    margin-top: 10px;
+    justify-content: flex-end;
+    border: solid black;
+  }
+  
+  nav a:hover {
+    cursor: pointer;
+    background-color: #002147;
+    color: #ffd700;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+  }
+  
+  nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: large;
+  }
+  
+  /* Blogs Section */
+  .head{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    margin-top:20px;
+  
+  }
+
+  section#blogs {
+    padding: 2rem 2rem;
+    margin-bottom:20px;
+    
+  }
+  
+  .blog-list {    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 10px;
+    
+  }
+  
+  .blog-item {
+    padding: 2rem;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    border: solid black;
+    background-color:#E6E6FA;
+  }
+  
+  .blog-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .blog-item h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .blog-item p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-family: cursive
+  }
+  
+  .blog-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #002147;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .blog-item a:hover {
+    background-color: #fffdf2;
+  
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    border: solid black;
+    margin-top: 90%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  

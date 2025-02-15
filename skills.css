@@ -1,0 +1,121 @@
+/* Base Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url('Images/Pink Marble Background Reminder Instagram Post.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+  .navbar {
+    display: flex;
+    gap: 2rem;
+    margin-top: 10px;
+    justify-content: flex-end;
+    border: solid black;
+    font-size: larger;
+    font-family:monospace;
+  }
+  
+  nav a:hover {
+    cursor: pointer;
+    background-color: #002147;
+    color: #ffd700;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .navbar a{
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: large;
+  }
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    margin-top:20px;
+  }
+  h2{
+    text-align: center;
+    margin-top:5px;
+    margin-bottom:15px;
+  }
+  #backend{
+    margin-top: 30px;
+    margin-bottom:10px ;
+  }
+
+  section#skills {
+    padding: 3rem 2rem;
+    
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .skill-item {
+    padding: 2rem;
+    border-radius: 8px;  
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    border: solid black;
+    background-color: #E6E6FA;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-10px);
+    color: #ffd700;
+    cursor: pointer;
+  }
+  
+  .skill-item h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .skill-item p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .skill-item img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  footer {
+    text-align: center;
+    border: solid black;
+    margin-top : 90%;
+
+  }
+  footer p {
+    margin: 0;
+  }
+  
