@@ -4,10 +4,7 @@ body, html {
   padding: 0;
   height: 100%;
   width: 100%;
-}
-
-body {
-  background-image: url('Images/Pink Marble Background Reminder Instagram Post.png');
+  background: linear-gradient(to right, #6a11cb, #2575fc);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -143,4 +140,62 @@ footer p {
 
   /* Footer text color */
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0.5rem;
+      margin-top: 5px;
+  }
 
+  .navbar a {
+      font-size: medium;
+      padding: 8px 12px;
+      flex-grow: 1;
+      text-align: center;
+  }
+
+  /* Social Media */
+  #Mysocial-media {
+      padding: 2rem 1rem;
+  }
+
+  #Mysocial-media a {
+      padding: 0.8rem 1.5rem;
+      font-size: 0.9rem;
+      min-width: 100px;
+      flex-grow: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Navbar */
+  .navbar {
+      gap: 1rem;
+      padding: 0.5rem;
+  }
+
+  .navbar a {
+      font-size: small;
+      padding: 6px 10px;
+      flex-grow: 1;
+  }
+
+  /* Social Media */
+  #Mysocial-media {
+      padding: 1.5rem 0.5rem;
+  }
+
+  #Mysocial-media div {
+      gap: 0.75rem;
+  }
+
+  #Mysocial-media a {
+      padding: 0.7rem 1rem;
+      font-size: 0.85rem;
+      min-width: 90px;
+      flex-grow: 1;
+  }
+}

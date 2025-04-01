@@ -7,11 +7,12 @@ body, html {
 }
 
 body {
-  background-image: url('Images/Pink Marble Background Reminder Instagram Post.png');
+  background: linear-gradient(to right, #6a11cb, #2575fc);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  background-position: fixed;
 }
 
 .navbar {
@@ -78,7 +79,7 @@ section#projects {
 .project-item p {
   margin-bottom: 1.5rem;
   font-size: 1rem;
-  font-family: cursive;
+  font-family: Fredoka One;
 }
 
 .project-link {
@@ -98,69 +99,6 @@ section#projects {
   color: #001c00;
 }
 
-/* Butterfly Animation */
-.butterfly img {
-  width: 50px;
-  animation: fly 7s linear infinite;
-}
-
-.butterfly {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-}
-
-@keyframes fly {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  25% {
-    transform: translate(200px, -150px);
-  }
-  50% {
-    transform: translate(400px, 0);
-  }
-  75% {
-    transform: translate(200px, 150px);
-  }
-  100% {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
-.butterfly img:nth-child(1) {
-  animation-delay: 2s;
-}
-
-.butterfly img:nth-child(2) {
-  animation-delay: 1s;
-}
-
-.butterfly img:nth-child(3) {
-  animation-delay: 3s;
-}
-
-.butterfly img:nth-child(4) {
-  animation-delay: 4s;
-}
-
-.butterfly img:nth-child(5) {
-  animation-delay: 3s;
-}
-
-.butterfly img:nth-child(6) {
-  animation-delay: 6s;
-}
-
-.butterfly img:nth-child(7) {
-  animation-delay: 7s;
-}
-
 footer {
   text-align: center;
   border: solid black;
@@ -170,4 +108,18 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+@media (max-width: 480px){
+  /* Navbar */
+  .navbar {
+      gap: 1rem;
+      padding: 0.5rem;
+  }
+
+  .navbar a {
+      font-size: small;
+      padding: 6px 10px;
+      flex-grow: 1;
+  }
 }

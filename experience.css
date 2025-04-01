@@ -1,0 +1,138 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 2rem;
+    margin-top: 10px;
+    justify-content: flex-end;
+    border: solid black;
+    font-size: larger;
+    font-family:monospace;
+  }
+  
+  nav a:hover {
+    cursor: pointer;
+    background-color: #002147;
+    color: #ffd700;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .navbar a{
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: large;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    margin-top: 20px;
+    font-family: poppins;
+    color: black;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    color: #ffd700;
+    font-size: 1.5em;
+    text-shadow: 2px 4px 4px rgba(255, 215, 0, 0.5);
+  }
+  
+  section#experience {
+    padding: 3rem 2rem;
+  }
+  
+  .journey-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .journey-text {
+    background-color: #E6E6FA;
+    padding: 2rem;
+    border-radius: 8px;
+    border: solid black;
+    max-width: 600px;
+    /*transition: transform 0.3s;*/
+  }
+  
+  .journey-text:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  }
+  
+  .animated-text {
+    margin: 0;
+    font-family: monospace;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #002147;
+    animation: typeWriter 4s steps(40) 1s 1 normal both,
+               blinkTextCursor 500ms steps(40) infinite normal;
+    overflow: hidden;
+    white-space: pre-wrap;
+    border-right: 2px solid #ffd700;
+  }
+  
+  @keyframes typeWriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+  }
+  
+  @keyframes blinkTextCursor {
+    from {
+        border-right-color: #ffd700;
+    }
+    to {
+        border-right-color: transparent;
+    }
+  }
+  
+  footer {
+    text-align: center;
+    border: solid black;
+    margin-top : 100px;
+  
+  }
+  footer p {
+    margin: 0;
+  }
+  @media (max-width: 480px){
+    /* Navbar */
+    .navbar {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+  
+    .navbar a {
+        font-size: small;
+        padding: 6px 10px;
+        flex-grow: 1;
+    }
+  }
+  

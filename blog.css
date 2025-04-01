@@ -7,11 +7,11 @@ body, html {
 }
 
 body {
-  background-image: url('Images/Pink Marble Background Reminder Instagram Post.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
 }
   
   .navbar {
@@ -24,7 +24,7 @@ body {
   
   nav a:hover {
     cursor: pointer;
-    background-color: #002147;
+    background-color:  #002147;
     color: #ffd700;
     transition: background-color 0.3s, color 0.3s;
     border-radius: 5px;
@@ -38,21 +38,22 @@ body {
   }
   
   /* Blogs Section */
-  .head{
+  h1{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 2em;
     margin-top:20px;
-  
+    margin-bottom: 20px;
   }
 
   section#blogs {
     padding: 2rem 2rem;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     
   }
   
-  .blog-list {    display: flex;
+  .blog-list {   
+     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
@@ -83,7 +84,7 @@ body {
   .blog-item p {
     margin-bottom: 1.5rem;
     font-size: 1rem;
-    font-family: cursive
+    font-family: Fredoka One;
   }
   
   .blog-item a {
@@ -111,4 +112,17 @@ body {
   footer p {
     margin: 0;
   }
+
+  @media (max-width: 480px){
+    /* Navbar */
+    .navbar {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
   
+    .navbar a {
+        font-size: small;
+        padding: 6px 10px;
+        flex-grow: 1;
+    }
+  }

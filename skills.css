@@ -7,7 +7,7 @@ body, html {
 }
 
 body {
-  background-image: url('Images/Pink Marble Background Reminder Instagram Post.png');
+  background: linear-gradient(to right, #6a11cb, #2575fc);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -119,3 +119,16 @@ body {
     margin: 0;
   }
   
+  @media (max-width: 480px){
+    /* Navbar */
+    .navbar {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+  
+    .navbar a {
+        font-size: small;
+        padding: 6px 10px;
+        flex-grow: 1;
+    }
+  }
