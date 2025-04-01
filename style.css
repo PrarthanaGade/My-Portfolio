@@ -3,10 +3,7 @@ body, html {
   padding: 0;
   height: 100%;
   width: 100%;
-}
-
-body {
-  background-image: url('Images/Pink Marble Background Reminder Instagram Post.png');
+  background: linear-gradient(to right, #6a11cb, #2575fc);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -165,12 +162,7 @@ footer {
 footer p {
   margin: 0;
 }
-.background {
-  width: 100%;
-  height: 100%;
-  background: url('Images/1.png') repeat;
-  animation: moveBackground 10s linear infinite;
-}
+
 
 @keyframes moveBackground {
   from {
@@ -181,3 +173,70 @@ footer p {
     background-position: -1000px 0;
   }
 }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 480px) {
+  footer {
+    font-size: 0.9rem;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 2px;
+  }
+  .navbar a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+    .spinner {
+      width: 80px; /* Reduce size on small screens */
+      height: 80px;
+      border-width: 10px; /* Thinner border */
+      align-items: center;
+      justify-content: center;
+    }
+  
+    #loading {
+      padding: 10px; /* Avoid extra space */
+    }
+  }
+  @media (max-width: 768px) {
+    #tagline {
+      font-size: 50px;
+      margin-left: 8px;
+    }
+  }
+  
+  /* Responsive for Small Screens */
+  @media (max-width: 480px) {
+    #tagline {
+      font-size: 40px;
+      margin-left: 5px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wave {
+      font-size: 4rem;
+    }
+  }
+  
+  /* Responsive for Small Screens */
+  @media (max-width: 480px) {
+    .wave {
+      font-size: 3rem;
+    }
+  }
+  
+  /* Optimized for 370px Screens */
+  @media (max-width: 370px) {
+    .wave {
+      font-size: 2.5rem; /* Adjusted for smaller screens */
+    }
+  }
+  
+ 
